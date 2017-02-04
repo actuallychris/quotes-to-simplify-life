@@ -1,35 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html >
 <head>
-    <meta charset="utf-8">
-    <title>Home Page | CIT 160 Files</title>
-    <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+  <title>Quotes of a person</title>
+
+
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
-
 <body>
-    <header>
-        <h1>CIT 160 Files</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="/chapter-3/ch3-files.html">Chapter 3 Files</a></li>
-                <li><a href="chapter-4/ch4-files.html">Chapter 4 Files</a></li>
-                <li> <a href="chapter-5/ch5-files.html">Chapter 5 Files</a></li>
-                <li> <a href="chapter-6/ch6-files.html">Chapter 6 Files</a></li>
-            </ul>
-        </nav>
-    </header>
-        <main>
-            <h2>A site to end all sites.</h2>
-            <p>Here is a site that will help </p>
-            <h3>A list of comparable sites</h3>
-        </main>
-        <footer>
-            <p>&copy; Christopher Smith | All Rights Reserved except as required by law</p>
-            <p>Last Updated: 26 January 2016</p>
-        </footer>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body onload="startTime(); startDate()">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header"><a href="#" class="navbar-brand"><img alt="Quotes" src=""/></a></div>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="date"></div>
+      <div id="display"></div>
+      <div id="content">
+        <p id="quote">"do or do not. there is no try" <br/>- yoda</p>
+      </div>
+    </div>
+    <div id="b-nav">
+      <ul>
+        <button id="gen" onclick="genQuote()">New Quote</button>
+        <a class="twitter-share-button" target="_blank" href="https://twitter.com/intent/tweet?text=the%20people%20who%20are%20crazy%20enough%20to%20think%20they%20can%20change%20the%20world%20are%20the%20ones%20who%20do.%20-%20Steve%20Jobs"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a class="fb-share-button" data-href="https://actuallychris.github.io" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Factuallychris.github.io%2F&amp;src=sdkpreparse">Share</a></a>
+      </ul>
+    </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+      <div id="fb-root"></div>
+      <script>
+          (function (d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s);
+              js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+              fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+      </script>
+    </body>
 </body>
 
 </html>
