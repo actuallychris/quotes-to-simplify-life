@@ -1,6 +1,6 @@
 html, body {
   overflow-x: hidden;
-  overflow-y: hidden; 
+  overflow-y: hidden;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -12,9 +12,9 @@ html, body {
 }
 
 #display {
-	color: white;
-	font-size: 2.9em;
-	top: 10px;
+    color: white;
+    font-size: 2.9em;
+    top: 10px;
   border-bottom: thin solid;
   padding-bottom: 20px;
   opacity: 0.80;
@@ -153,10 +153,10 @@ p :hover {
   color: white;
 }
 
-@media screen 
- and (max-device-width: 800px) 
-  and (max-device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 2) 
+@media screen
+ and (max-device-width: 800px)
+  and (max-device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
   and (orientation: portrait) {
     p {
       font-size: 1em;
